@@ -1,0 +1,79 @@
+<!Doctype>
+<html>
+
+  <head>
+    <title>Blending Shapes - Tutorial</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="bodyBox">
+      <div class="title">
+        <h1>Tuto by DevRhapsody</h1>
+        <div id="titleBackground"></div>
+      </div>
+      <h2>What is the purpose ?</h2>
+      <p>The purpose of this tuto is simply to explain how to use the "position" dclaration in CSS to blend shapes.</p>
+      <h2>Intitial Position</h2>
+      <p>Intial position is as below.</p>
+      <div class="initialPosition">
+        <div class="circle" id="blueBefore"></div>
+        <div class="circle" id="purpleBefore"></div>
+      </div>
+        <p><span class="attention">Here is the CSS code I used.</span></p>
+        <div class="codeSection"><code><span class="selector">
+            .initialPosition </span>{<br>
+              <span class="property">position</span>: <span class="value_magenta">relative</span>;<br>
+              }
+        </code></div>
+        <p><span class="attention">Explanations:</span></p>
+      <p>It is important to notice that the parent element containing both circles needs to have a "<em style="font-weight: 1000; color: red;">position: relative</em>". That's mandatory because the parent needs to be positioned if we want to position the children elements like expected.</p>
+    <h2>Let's blend the colors at 50% !</h2>
+      <p>If we want to blend those color at 50%, how should we do ?</p>
+      <div class="fiftyBlend">
+        <div class="circle" id="blueAfter"></div>
+        <div class="circle" id="purpleAfter"></div>
+      </div>
+      <p><span class="attention">Here is the CSS code I used.</span></p>
+      <div class="codeSection"><code><span class="selector">
+        .fiftyBlend </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">relative</span>;<br>
+        }<br><br><br>
+        <span class="selector">#blueAfter </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">relative</span>;<br>
+        }<br><br><br>
+        <span class="selector">#purpleAfter </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">absolute</span>;<br>
+          <span class="property">top</span>:<span class="value_orange">0px</span>;<br>
+          <span class="property">left</span>: <span class="value_orange">100px</span>;<br>
+        }
+    </code></div>
+    <p><span class="attention">Explanations:</span></p>
+    <p>As previosuly said, we </p> 
+    <h2>Let's blend the colors fully !</h2>
+      <p>Then, if we blend everything together, what should we do ?</p>
+      <div class="hundredBlend">
+        <div class="circle" id="blueHunderd"></div>
+        <div class="circle" id="purpleHunderd"></div>
+      </div>
+      <p><span class="attention">Here is the CSS code I used.</span></p>
+      <div class="codeSection"><code><span class="selector">
+        .hundredBlend </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">relative</span>;<br>
+        }<br><br><br>
+        <span class="selector">#blueHunderd </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">relative</span>;<br>
+        }<br><br><br>
+        <span class="selector">#purpleHunderd </span>{<br>
+          <span class="property">position</span>: <span class="value_magenta">absolute</span>;<br>
+          <span class="property">top</span>:<span class="value_orange">0px</span>;<br>
+          <span class="property">left</span>: <span class="value_orange">0px</span>;<br>
+        }
+    </code></div>
+    <p><span class="attention">Explanations:</span></p>
+      <h3>Now, you know everything !</h3>
+      </div>
+      
+    </body>
+</html>

@@ -1,0 +1,130 @@
+*{
+  font-family: Courier New, Tahoma, sans-serif;
+}
+
+body{
+margin:50px auto;
+padding: 20px;
+border: 5px solid black;
+width: 600px;
+}
+
+p{
+text-align: justify;
+}
+
+h1{
+padding: 10px;
+margin: 0px auto;
+color: black;
+border: 2px solid black;
+text-align: center;
+background-color: lightgrey;
+}
+
+
+h2{
+position:relative;
+width: 100%;
+}
+
+h3{
+  padding:10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+code{
+  font-family: monospace;
+  text-align: left;
+  color:white;
+}
+
+.codeSection{
+width: auto;
+margin: 5px;
+padding: 10px;
+background-color: rgb(32, 30, 47);
+border: 2px solid lightgrey;
+}
+
+.selector{
+color:rgb(197, 231, 92);
+}
+
+.property{
+color:rgb(100, 250, 240);
+margin-left: 30px;
+padding: 50px 0px;
+}
+
+.value_magenta{
+color: rgb(230, 139, 219);
+}
+
+.value_orange{
+color: rgb(255, 149, 130);
+}
+
+.attention{
+  color: red;
+  font-weight: bold;
+}
+
+.bodyBox{
+align-items: center;
+}
+
+.hundredBlend,
+.fiftyBlend,
+.initialPosition{
+position: relative;
+margin: 10px 20px;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  opacity: 0.5;
+  border-radius: 90%;
+  clear: left;
+}
+
+#blueBefore{
+  background-color: blue;
+  position: relative;
+}
+
+#blueAfter{
+  background-color:blue;
+  position: relative;
+}
+
+#blueHunderd{
+  background-color:blue;
+  position: relative;
+}
+
+#purpleBefore{
+  background-color:purple;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+
+#purpleAfter{
+  background-color:purple;
+  position: absolute;
+  top:0px;
+  left: 100px;
+}
+
+#purpleHunderd{
+  background-color: purple;
+  position: absolute;
+  top:0px;
+  left: 0px;
+}
