@@ -28,7 +28,8 @@
               }
         </code></div>
         <p><span class="attention">Explanations:</span></p>
-      <p>It is important to notice that the parent element containing both circles needs to have a "<em style="font-weight: 1000; color: red;">position: relative</em>". That's mandatory because the parent needs to be positioned if we want to position the children elements like expected.</p>
+      <p>It is important to notice that the parent element containing both circles needs to have a "<em style="font-weight: 1000; color: red;">position: relative</em>". 
+        That's mandatory because the parent needs to be positioned if we want to position the children elements like expected.</p>
     <h2>Let's blend the colors at 50% !</h2>
       <p>If we want to blend those color at 50%, how should we do ?</p>
       <div class="fiftyBlend">
@@ -50,7 +51,10 @@
         }
     </code></div>
     <p><span class="attention">Explanations:</span></p>
-    <p>As previosuly said, we </p> 
+    <p>As previosuly said, as soon as the parent element ("<em style="color:rgb(191, 207, 39)">.fiftyBlend</em>") is postitioned, we can then position the children elements. 
+    We will then first use the "<em style="font-weight: 1000; color: red;">position: relative</em>" for the left circle (in blue) in order to be able to position the second circle.
+    Then, we will use the "<em style="font-weight: 1000; color: red;">position: absolute</em>" in order to determine the position of the second circle based on the first circle position.
+    However, if you don't move the circle, it will be above the first one. To move it, we will use the <em style="font-weight: 1000; color: red;">left</em> property to move it accordingly.</p> 
     <h2>Let's blend the colors fully !</h2>
       <p>Then, if we blend everything together, what should we do ?</p>
       <div class="hundredBlend">
@@ -72,7 +76,9 @@
         }
     </code></div>
     <p><span class="attention">Explanations:</span></p>
-      <h3>Now, you know everything !</h3>
+    <p>Finally, how to do if you want to blend totally two shapes ? That's easy, as always as soon as the parent element ("<em style="color:rgb(191, 207, 39)">.hundredBlend</em>") is postitioned, we will be able to position the children elements 
+      using the "<em style="font-weight: 1000; color: red;">position: absolute</em>" delcaration.</p> 
+      <h3>Now, you know how to blend shapes !</h3>
       </div>
       
     </body>
